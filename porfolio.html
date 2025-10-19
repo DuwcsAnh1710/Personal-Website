@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Le Duc Anh</title>
+    <title>Dự án | Lê Đức Anh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body data-page="portfolio">
     <div class="background-glow"></div>
@@ -15,69 +16,151 @@
       <div class="container header-grid">
         <div class="brand">
           <span class="brand-name">DuwcsAnh</span>
-          <span class="brand-tag">IT Student</span>
+          <span class="brand-tag">Portfolio</span>
         </div>
         <nav class="main-nav">
           <div class="nav-satellites">
             <a class="nav-pill" href="home.html" data-page="home">
               <span class="pill-glow"></span>
-              <span>Home</span>
+              <span>Trang chủ</span>
             </a>
             <a class="nav-pill" href="about.html" data-page="about">
               <span class="pill-glow"></span>
-              <span>About</span>
+              <span>Giới thiệu</span>
             </a>
             <a class="nav-pill" href="skills.html" data-page="skills">
               <span class="pill-glow"></span>
-              <span>Skills</span>
+              <span>Kỹ năng</span>
             </a>
             <a class="nav-pill is-active" href="porfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
-              <span>Portfolio</span>
+              <span>Dự án</span>
             </a>
             <a class="nav-pill" href="contact.html" data-page="contact">
               <span class="pill-glow"></span>
-              <span>Contact</span>
+              <span>Liên hệ</span>
             </a>
           </div>
         </nav>
-        <a class="btn-outline btn-cta" href="contact.html">Ket noi</a>
+        <a class="btn-outline btn-cta" href="mailto:75246anhhao@gmail.com">Gửi email</a>
       </div>
     </header>
 
     <main>
-      <section id="experience" class="experience">
-        <div class="container section-head">
-          <h2>Du an tieu bieu</h2>
-          <p>Cac san pham gan day voi vai tro thiet ke va xay dung giao dien.</p>
+      <!-- Hero dự án -->
+      <section class="project-hero">
+        <div class="container project-hero-grid">
+          <div>
+            <span class="about-label">Thực hành &amp; xây dựng</span>
+            <h1>Những dự án tiêu biểu đã và đang phát triển</h1>
+          </div>
+          <p>
+            Bốn dự án dưới đây thể hiện hành trình kết hợp UI/UX với lập trình web/backend của mình. Mỗi sản phẩm đều xuất phát từ bài toán thực tế sinh
+            viên hoặc nhu cầu cá nhân, được triển khai và duy trì trên GitHub.
+          </p>
         </div>
-        <div class="container experience-grid">
-          <article class="project-card">
-            <img src="images/example.png" alt="Giao dien du an minh hoa 1" />
-            <div class="project-info">
-              <h3>Transit Companion</h3>
-              <p>Ung dung theo doi phuong tien cong cong, toi uu trai nghiem di chuyen.</p>
+      </section>
+
+      <!-- Danh sách dự án -->
+      <section class="project-list">
+        <div class="container">
+          <article class="project-row">
+            <div class="project-thumb">
+              <img src="images/project1.png" alt="Giao diện dự án StuSmart" />
+            </div>
+            <div class="project-content">
+              <header>
+                <h2>StuSmart</h2>
+                <span>Nền tảng quản lý thông tin sinh viên UTH</span>
+              </header>
+              <p>
+                Web app giúp sinh viên theo dõi lịch học, điểm số và cập nhật học phí. Mình phụ trách nghiên cứu UX, thiết kế UI trong Figma, tạo
+                prototype HTML/CSS và xây dựng backend Express.js kết nối MongoDB để đồng bộ dữ liệu theo tài khoản.
+              </p>
+              <ul class="chip-list">
+                <li>Figma</li>
+                <li>HTML/CSS</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/StuSmart" target="_blank" rel="noreferrer">Xem repository</a>
+              </div>
             </div>
           </article>
-          <article class="project-card">
-            <img src="images/example.png" alt="Giao dien du an minh hoa 2" />
-            <div class="project-info">
-              <h3>Campus Hub</h3>
-              <p>Trang web cong dong sinh vien voi he thong su kien va hoc lieu.</p>
+
+          <article class="project-row">
+            <div class="project-thumb">
+              <img src="images/project2.png" alt="Giao diện dự án MultiDriver Hub" />
+            </div>
+            <div class="project-content">
+              <header>
+                <h2>MultiDriver Hub</h2>
+                <span>Trình quản lý nhiều tài khoản Google Drive</span>
+              </header>
+              <p>
+                Ứng dụng desktop tích hợp Python (PySide6) và Node.js để quản lý nhiều tài khoản Drive. Hỗ trợ đồng bộ dữ liệu, tìm kiếm nâng cao và báo
+                cáo dung lượng. Mình đảm nhận kiến trúc luồng, UI và tài liệu hoá API giữa hai ngăn ứng dụng.
+              </p>
+              <ul class="chip-list">
+                <li>Python</li>
+                <li>PySide6</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Google Drive API</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/MultiDriver-Hub" target="_blank" rel="noreferrer">Xem repository</a>
+              </div>
             </div>
           </article>
-          <article class="project-card">
-            <img src="images/example.png" alt="Giao dien du an minh hoa 3" />
-            <div class="project-info">
-              <h3>FinTrack Mobile</h3>
-              <p>Thiet ke dashboard tai chinh ca nhan, tap trung vao truc quan du lieu.</p>
+
+          <article class="project-row">
+            <div class="project-thumb">
+              <img src="images/battleship.jpg" alt="Giao diện trò chơi BattleShip" />
+            </div>
+            <div class="project-content">
+              <header>
+                <h2>BattleShip</h2>
+                <span>Trò chơi hải chiến luyện thuật toán</span>
+              </header>
+              <p>
+                Trò chơi BattleShip chạy trên Python console. Dự án giúp mình rèn luyện xử lý ma trận, kiểm tra va chạm tàu và tạo đối thủ AI cơ bản.
+                Phục vụ môn Cơ sở lập trình và luyện tập cấu trúc dữ liệu.
+              </p>
+              <ul class="chip-list">
+                <li>Python</li>
+                <li>Game logic</li>
+                <li>Ma trận</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/BattleShip" target="_blank" rel="noreferrer">Xem repository</a>
+              </div>
             </div>
           </article>
-          <article class="project-card">
-            <img src="images/example.png" alt="Giao dien du an minh hoa 4" />
-            <div class="project-info">
-              <h3>Foodie XR</h3>
-              <p>Toi uu hanh trinh dat mon da nen tang voi chuyen dong muot ma.</p>
+
+          <article class="project-row">
+            <div class="project-thumb">
+              <img src="images/project4.png" alt="Giao diện trò chơi Rock Paper Scissors" />
+            </div>
+            <div class="project-content">
+              <header>
+                <h2>Rock Paper Scissors</h2>
+                <span>Game web mini luyện JavaScript</span>
+              </header>
+              <p>
+                Trò chơi oẳn tù tì được xây dựng bằng HTML, CSS, JavaScript thuần. Mình tập trung vào tạo hiệu ứng chuyển động, viết logic so sánh kết quả
+                sạch và dễ mở rộng cho nhiều chế độ chơi mới, đồng thời tối ưu trải nghiệm trên thiết bị di động.
+              </p>
+              <ul class="chip-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Animation</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/RockPaperScissors" target="_blank" rel="noreferrer">Xem repository</a>
+              </div>
             </div>
           </article>
         </div>
@@ -86,13 +169,51 @@
 
     <footer class="site-footer">
       <div class="container footer-flex">
-        <div>
-          <strong>DuwcsAnh</strong>
-          <p>Thiet ke trai nghiem so, xay dung giao dien than thien va nhieu cam hung.</p>
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="footer-logo-mark">DA</span>
+            <div class="footer-logo-text">
+              <span class="footer-logo-title">Portfolio</span>
+              <strong>Lê Đức Anh</strong>
+            </div>
+          </div>
+          <p>UI/UX &amp; Front-end - Sinh viên năm 3 CNTT tại UTH University.</p>
+          <ul class="footer-socials">
+            <li>
+              <a href="https://www.facebook.com/leeducanh1710" target="_blank" rel="noreferrer" aria-label="Facebook của Lê Đức Anh">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/DuwcsAnh1710" target="_blank" rel="noreferrer" aria-label="GitHub của Lê Đức Anh">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_lee.duwcs.anhz/" target="_blank" rel="noreferrer" aria-label="Instagram của Lê Đức Anh">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <span>&copy; 2024 Le Duc Anh. Giu lien he de cung tao nen san pham tuyet voi.</span>
+        <div class="footer-contact">
+          <h3>Liên hệ</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Đại học Giao Thông Vận Tải TP.HCM</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:75246anhhao@gmail.com">75246anhhao@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:0933543987">0933543987</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
 
     <script src="app.js" defer></script>
   </body>
