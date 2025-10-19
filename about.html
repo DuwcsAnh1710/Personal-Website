@@ -3,82 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Le Duc Anh</title>
+    <title>Giới thiệu | Lê Đức Anh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body data-page="about">
     <div class="background-glow"></div>
     <div class="background-parallax"></div>
     <div class="cursor-orb"></div>
+    <aside class="floating-social" aria-label="Kết nối">
+      <a href="https://github.com/DuwcsAnh1710" target="_blank" rel="noreferrer" aria-label="GitHub của DuwcsAnh">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/_lee.duwcs.anhz/" target="_blank" rel="noreferrer" aria-label="Instagram của DuwcsAnh">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/leeducanh1710" target="_blank" rel="noreferrer" aria-label="Facebook của DuwcsAnh">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </aside>
 
     <header class="site-header">
       <div class="container header-grid">
         <div class="brand">
           <span class="brand-name">DuwcsAnh</span>
-          <span class="brand-tag">IT Student</span>
+          <span class="brand-tag">Sinh viên CNTT</span>
         </div>
         <nav class="main-nav">
           <div class="nav-satellites">
             <a class="nav-pill" href="home.html" data-page="home">
               <span class="pill-glow"></span>
-              <span>Home</span>
+              <span>Trang chủ</span>
             </a>
             <a class="nav-pill is-active" href="about.html" data-page="about">
               <span class="pill-glow"></span>
-              <span>About</span>
+              <span>Giới thiệu</span>
             </a>
             <a class="nav-pill" href="skills.html" data-page="skills">
               <span class="pill-glow"></span>
-              <span>Skills</span>
+              <span>Kỹ năng</span>
             </a>
             <a class="nav-pill" href="porfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
-              <span>Portfolio</span>
+              <span>Dự án</span>
             </a>
             <a class="nav-pill" href="contact.html" data-page="contact">
               <span class="pill-glow"></span>
-              <span>Contact</span>
+              <span>Liên hệ</span>
             </a>
           </div>
         </nav>
-        <a class="btn-outline btn-cta" href="contact.html">Ket noi</a>
+        <a class="btn-outline btn-cta" href="contact.html">Kết nối</a>
       </div>
     </header>
 
     <main>
       <section id="about" class="about">
+        <!-- Tổng quan về bản thân -->
         <div class="container about-grid">
-          <div class="about-photo">
-            <img src="images/avt2.png" alt="Anh gioi thieu Le Duc Anh" />
-          </div>
+          <figure class="about-photo">
+            <img src="images/avt2.jpg" alt="Lê Đức Anh trong buổi workshop thiết kế" />
+            <figcaption class="about-caption">
+              <span>Năm 3 · UTH University</span>
+              <span>Định hướng UI/UX &amp; Front-end</span>
+            </figcaption>
+          </figure>
           <div class="about-copy">
-            <h2>Goc nhin cua toi</h2>
+            <span class="about-label">Góc nhìn &amp; hành trình</span>
+            <h2>Biến công nghệ thành trải nghiệm dễ chạm</h2>
             <p>
-              Tu cac bai tap hoc den du an cong dong, toi luon uu tien su ro rang va trai nghiem nguoi dung. Toi thuong dam nhan vai tro thiet ke giao
-              dien, xay dung prototype va hien thuc hoa bang HTML, CSS, JavaScript cung mot so framework hien dai.
+              Mình là Lê Đức Anh, sinh viên năm 3 ngành Công nghệ thông tin tại UTH University (Đại học Giao thông Vận tải TP.HCM). Mình bén duyên với
+              UI/UX thông qua các đồ án và hoạt động CLB, từ đó yêu thích việc kết nối nhu cầu người dùng với giải pháp số trực quan, dễ tiếp cận.
             </p>
             <p>
-              Hien tai, muc tieu cua toi la tich luy trai nghiem tu cac du an thuc tap va cong tac vien de tien gan hon den dinh huong Product
-              Designer &amp; Front-end Developer.
+              Trên lớp, mình tập trung củng cố nền tảng lập trình web. Ngoài giờ học, mình chủ động nghiên cứu hành vi người dùng, xây dựng prototype và
+              thử nghiệm với bạn bè để cải thiện từng chi tiết. Mục tiêu của mình là phát triển những sản phẩm học đường thân thiện, dễ dùng và giàu cảm hứng.
             </p>
+            <ul class="about-badges">
+              <li>Sinh viên UTH University</li>
+              <li>Năm 3 Công nghệ thông tin</li>
+              <li>Định hướng UI/UX &amp; Front-end</li>
+            </ul>
             <div class="info-grid">
               <div>
-                <span class="info-label">Nam hoc</span>
-                <span class="info-value">Nam 3 (2021 - nay)</span>
+                <span class="info-label">Năm học</span>
+                <span class="info-value">2023 - 2026</span>
               </div>
               <div>
-                <span class="info-label">Chuyen nganh</span>
-                <span class="info-value">Cong nghe Thong tin</span>
+                <span class="info-label">Chuyên ngành</span>
+                <span class="info-value">Công nghệ thông tin</span>
               </div>
               <div>
-                <span class="info-label">Truong hoc</span>
-                <span class="info-value">DH Giao thong Van tai TP.HCM</span>
+                <span class="info-label">Trường</span>
+                <span class="info-value">UTH University (ĐH Giao thông Vận tải TP.HCM)</span>
               </div>
               <div>
-                <span class="info-label">Dinh huong</span>
-                <span class="info-value">Product Designer &amp; Front-end Developer</span>
+                <span class="info-label">Định hướng</span>
+                <span class="info-value">UI/UX Designer · Front-end Intern</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Hồ sơ chi tiết -->
+        <div class="container profile-sections">
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-id-badge"></i>
+              <h3>Thông tin cá nhân</h3>
+            </div>
+            <ul class="profile-list">
+              <li><span>Họ và tên</span><span>Lê Đức Anh</span></li>
+              <li><span>Sinh viên</span><span>Năm 3 Công nghệ thông tin · UTH University</span></li>
+              <li><span>Email</span><span>75246anhhao@gmail.com</span></li>
+              <li><span>Đang học</span><span>Chương trình chính quy 2023 - 2026</span></li>
+              <li><span>Địa điểm</span><span>Thủ Đức, TP.HCM</span></li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3>Mục tiêu nghề nghiệp</h3>
+            </div>
+            <p>
+              Xây dựng lộ trình UI/UX rõ ràng: từ nghiên cứu, phân tích vấn đề đến thiết kế giải pháp khả thi và kiểm thử với người dùng thực tế.
+            </p>
+            <ul class="profile-bullets">
+              <li>Hoàn thành thực tập UI/UX hoặc Front-end tại doanh nghiệp công nghệ 2025.</li>
+              <li>Xây dựng 03 case study nổi bật về trải nghiệm sinh viên và sản phẩm giáo dục.</li>
+              <li>Tối ưu handoff giữa thiết kế và lập trình thông qua component library hiệu quả.</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-heart"></i>
+              <h3>Sở thích</h3>
+            </div>
+            <ul class="chip-list">
+              <li>Vẽ wireframe</li>
+              <li>Khám phá micro-interaction</li>
+              <li>Chụp ảnh đường phố</li>
+              <li>Đọc UX case study</li>
+              <li>Tham gia workshop thiết kế</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-language"></i>
+              <h3>Ngôn ngữ</h3>
+            </div>
+            <ul class="language-list">
+              <li><span>Tiếng Việt</span><span>Bản địa</span></li>
+              <li><span>Tiếng Anh</span><span>Đọc tài liệu UX, giao tiếp tốt</span></li>
+              <li><span>Làm việc nhóm</span><span>Facilitator workshop</span></li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h3>Kỹ năng nổi bật</h3>
+            </div>
+            <ul class="chip-list">
+              <li>Nghiên cứu người dùng</li>
+              <li>UI design system</li>
+              <li>Prototype tương tác</li>
+              <li>HTML/CSS responsive</li>
+              <li>Phân tích dữ liệu khảo sát</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <div class="card-head">
+              <i class="fa-solid fa-award"></i>
+              <h3>Chứng chỉ · Giải thưởng</h3>
+            </div>
+            <ul class="achievement-list">
+              <li>
+                <strong>Google UX Design Foundations (2024)</strong>
+                <span>Khóa nền tảng UX trên Coursera · hoàn thành đầy đủ dự án mô phỏng.</span>
+              </li>
+              <li>
+                <strong>Figma UI Essentials Workshop</strong>
+                <span>Chứng nhận cộng đồng Vietnam UX/UI về auto layout và prototyping thực chiến.</span>
+              </li>
+              <li>
+                <strong>Giải Ba Hackathon UTH 2023</strong>
+                <span>Đồng đội thiết kế giải pháp quản lý hoạt động sinh viên dựa trên mobile app.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Khoảnh khắc học tập -->
+        <div class="container photo-gallery">
+          <h3>Khoảnh khắc học tập &amp; dự án</h3>
+          <div class="gallery-grid">
+            <img src="images/avt1.jpg" alt="Lê Đức Anh lên ý tưởng cho prototype UI" />
+            <img src="images/avt2.jpg" alt="Lê Đức Anh phỏng vấn người dùng tại thư viện UTH" />
+            <img src="images/avt3.jpg" alt="Lê Đức Anh khảo sát UX tại khuôn viên trường" />
+            <img src="images/avt4.jpg" alt="Lê Đức Anh ghi chú trong phòng học nhóm" />
           </div>
         </div>
       </section>
@@ -88,9 +210,9 @@
       <div class="container footer-flex">
         <div>
           <strong>DuwcsAnh</strong>
-          <p>Thiet ke trai nghiem so, xay dung giao dien than thien va nhieu cam hung.</p>
+          <p>Thiết kế trải nghiệm số, xây dựng giao diện thân thiện và nhiều cảm hứng.</p>
         </div>
-        <span>&copy; 2024 Le Duc Anh. Giu lien he de cung tao nen san pham tuyet voi.</span>
+        <span>&copy; 2024 Lê Đức Anh. Giữ liên hệ để cùng tạo nên sản phẩm tuyệt vời.</span>
       </div>
     </footer>
 

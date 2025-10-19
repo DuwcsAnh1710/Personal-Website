@@ -3,45 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Le Duc Anh</title>
+    <title>Trang chủ | Lê Đức Anh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body data-page="home">
     <div class="background-glow"></div>
     <div class="background-parallax"></div>
     <div class="cursor-orb"></div>
+    <aside class="floating-social" aria-label="Kết nối">
+      <a href="https://github.com/DuwcsAnh1710" target="_blank" rel="noreferrer" aria-label="GitHub của DuwcsAnh">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/_lee.duwcs.anhz/" target="_blank" rel="noreferrer" aria-label="Instagram của DuwcsAnh">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/leeducanh1710" target="_blank" rel="noreferrer" aria-label="Facebook của DuwcsAnh">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </aside>
 
     <header class="site-header">
       <div class="container header-grid">
         <div class="brand">
           <span class="brand-name">DuwcsAnh</span>
-          <span class="brand-tag">IT Student</span>
+          <span class="brand-tag">Sinh viên UI/UX</span>
         </div>
         <nav class="main-nav">
           <div class="nav-satellites">
             <a class="nav-pill is-active" href="home.html" data-page="home">
               <span class="pill-glow"></span>
-              <span>Home</span>
+              <span>Trang chủ</span>
             </a>
             <a class="nav-pill" href="about.html" data-page="about">
               <span class="pill-glow"></span>
-              <span>About</span>
+              <span>Giới thiệu</span>
             </a>
             <a class="nav-pill" href="skills.html" data-page="skills">
               <span class="pill-glow"></span>
-              <span>Skills</span>
+              <span>Kỹ năng</span>
             </a>
             <a class="nav-pill" href="porfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
-              <span>Portfolio</span>
+              <span>Dự án</span>
             </a>
             <a class="nav-pill" href="contact.html" data-page="contact">
               <span class="pill-glow"></span>
-              <span>Contact</span>
+              <span>Liên hệ</span>
             </a>
           </div>
         </nav>
-        <a class="btn-outline btn-cta" href="contact.html">Ket noi</a>
+        <a class="btn-outline btn-cta" href="contact.html">Kết nối</a>
       </div>
     </header>
 
@@ -49,29 +61,91 @@
       <section id="hero" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Welcome</p>
-            <h1>Toi la Le Duc Anh<span class="nickname"> (DuwcsAnh)</span></h1>
+            <p class="eyebrow">Xin chào</p>
+            <p class="hero-tagline">DuwcsAnh</p>
+            <h1>Tôi là Lê Đức Anh</h1>
             <p class="lead">
-              Sinh vien nam 3 nganh Cong nghe Thong tin tai Truong Dai hoc Giao thong Van tai TP.HCM. Toi yeu thich xay dung san pham so truc quan,
-              giau trai nghiem va dang tim co hoi thuc tap de bien y tuong thanh giai phap thuc te.
+              Sinh viên năm 3 (2023 - 2026) ngành Thiết kế UI/UX tại UTH University. Tôi chú trọng nghiên cứu người dùng, xây dựng trải nghiệm trực quan
+              và tạo prototype có tính ứng dụng cao cho cộng đồng sinh viên.
             </p>
             <div class="hero-actions">
-              <a class="btn-primary" href="#" aria-label="Download CV cua Le Duc Anh">Download CV</a>
-              <a class="btn-text" href="contact.html">Trao doi du an &rarr;</a>
+              <a class="btn-primary" href="#" aria-label="Tải CV của Lê Đức Anh">Tải CV</a>
+              <a class="btn-text" href="porfolio.html">Xem dự án tiêu biểu &rarr;</a>
             </div>
+            <!-- Liên kết mạng xã hội nhanh -->
+            <ul class="hero-social">
+              <li><a href="https://github.com/DuwcsAnh1710" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+              <li><a href="https://www.instagram.com/_lee.duwcs.anhz/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.facebook.com/leeducanh1710" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            </ul>
           </div>
           <div class="hero-photo">
-            <img src="images/avt1.png" alt="Chan dung Le Duc Anh" />
+            <img src="images/avt1.jpg" alt="Chân dung Lê Đức Anh" />
           </div>
         </div>
-        <div class="container hero-clients">
-          <span>Hop tac cung:</span>
-          <ul>
-            <li>Freelance Team</li>
-            <li>Startup Studio</li>
-            <li>University Lab</li>
-            <li>Hackathon Crew</li>
-          </ul>
+        <div class="container hero-metrics">
+          <p class="metrics-label">Thành tích nhỏ</p>
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <div class="metric-icon" aria-hidden="true">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <p class="metric-value">12+</p>
+                <p class="metric-text">Dự án học kỳ hoàn thành</p>
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-icon" aria-hidden="true">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <div>
+                <p class="metric-value">180+</p>
+                <p class="metric-text">Giờ làm việc nhóm &amp; workshop</p>
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-icon" aria-hidden="true">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div>
+                <p class="metric-value">4.7</p>
+                <p class="metric-text">Điểm trung bình đánh giá đồ án</p>
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-icon" aria-hidden="true">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+              <div>
+                <p class="metric-value">3+</p>
+                <p class="metric-text">Buổi phỏng vấn &amp; kiểm thử người dùng</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Tóm tắt nhanh -->
+        <div class="container hero-summary">
+          <article>
+            <h3>Định hướng nghề nghiệp</h3>
+            <p>Phát triển sản phẩm số dành cho sinh viên, cân bằng giữa nhu cầu thực tế và trải nghiệm cảm xúc.</p>
+          </article>
+          <article>
+            <h3>Công cụ mạnh</h3>
+            <ul>
+              <li>Figma &amp; FigJam</li>
+              <li>HTML · CSS · Prototype tương tác</li>
+              <li>Notion để quản lý kiến thức</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Cơ hội mong muốn</h3>
+            <p>Thực tập UI/UX 2025 tại môi trường có mentoring và quy trình thiết kế bài bản.</p>
+          </article>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Cuộn xuống</span>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
       </section>
     </main>
@@ -80,9 +154,9 @@
       <div class="container footer-flex">
         <div>
           <strong>DuwcsAnh</strong>
-          <p>Thiet ke trai nghiem so, xay dung giao dien than thien va nhieu cam hung.</p>
+          <p>Thiết kế trải nghiệm số, xây dựng giao diện thân thiện và nhiều cảm hứng.</p>
         </div>
-        <span>&copy; 2024 Le Duc Anh. Giu lien he de cung tao nen san pham tuyet voi.</span>
+        <span>&copy; 2024 Lê Đức Anh. Giữ liên hệ để cùng tạo nên sản phẩm tuyệt vời.</span>
       </div>
     </footer>
 
