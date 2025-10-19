@@ -96,3 +96,93 @@ const updateParallax = (x = 0, y = 0) => {
     updateParallax(0, 0);
   });
 })();
+
+(() => {
+  // Scroll-triggered reveal + progress indicators
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+  const progressElements = document.querySelectorAll(".bar-track[data-progress], .radial-progress[data-progress]");
+
+  if (prefersReducedMotion) {
+    revealElements.forEach((element) => {
+      element.classList.add("is-visible");
+    });
+
+    progressElements.forEach((element) => {
+      const targetValue = Number(element.dataset.progress || 0);
+
+      if (element.classList.contains("bar-track")) {
+        if (!element.style.getPropertyValue("--target-width") && Number.isFinite(targetValue)) {
+          element.style.setProperty("--target-width", `${targetValue}%`);
+        }
+        element.classList.add("is-active");
+      } else if (element.classList.contains("radial-progress") && Number.isFinite(targetValue)) {
+        element.style.setProperty("--progress", targetValue);
+      }
+    });
+
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const target = entry.target;
+        target.classList.add("is-visible");
+        observer.unobserve(target);
+      });
+    },
+    { threshold: 0.25, rootMargin: "0px 0px -10% 0px" }
+  );
+
+  revealElements.forEach((element) => {
+    const delay = element.dataset.revealDelay;
+
+    if (delay) {
+      element.style.setProperty("--reveal-delay", delay);
+    }
+    revealObserver.observe(element);
+  });
+
+  const progressObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const element = entry.target;
+        const targetValue = Number(element.dataset.progress || 0);
+
+        if (element.classList.contains("radial-progress") && Number.isFinite(targetValue)) {
+          element.style.setProperty("--progress", targetValue);
+          element.classList.add("is-active");
+        } else if (element.classList.contains("bar-track")) {
+          element.classList.add("is-active");
+        }
+
+        observer.unobserve(element);
+      });
+    },
+    { threshold: 0.45, rootMargin: "0px 0px -10% 0px" }
+  );
+
+  progressElements.forEach((element) => {
+    const targetValue = Number(element.dataset.progress || 0);
+
+    if (element.classList.contains("bar-track")) {
+      if (!element.style.getPropertyValue("--target-width") && Number.isFinite(targetValue)) {
+        element.style.setProperty("--target-width", `${targetValue}%`);
+      }
+
+      element.classList.add("progress-init");
+      progressObserver.observe(element);
+    } else if (element.classList.contains("radial-progress") && Number.isFinite(targetValue)) {
+      element.style.setProperty("--progress", 0);
+      progressObserver.observe(element);
+    }
+  });
+})();
