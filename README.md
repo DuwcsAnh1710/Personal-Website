@@ -10,7 +10,7 @@ Personal-Website/
 ├── about.html         # Personal background + timeline cards
 ├── contact.html       # Contact hero, info cards, form
 ├── home.html          # Landing page hero + highlights
-├── porfolio.html      # Project showcase grid
+├── portfolio.html    # Project showcase grid
 ├── skills.html        # Skill map & progress visuals
 ├── style.css          # Global styles, layout, animations
 ├── app.js             # Navigation states, cursor, scroll reveals

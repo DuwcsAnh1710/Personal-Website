@@ -1134,6 +1134,30 @@ ul {
   opacity: 1;
 }
 
+/* Alternating layout - image right */
+.project-row--reverse {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.project-row--reverse .project-thumb {
+  order: 2;
+}
+
+.project-row--reverse .project-content {
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  .project-row--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .project-row--reverse .project-thumb,
+  .project-row--reverse .project-content {
+    order: unset;
+  }
+}
+
 /* Project content */
 .project-content {
   padding: 36px 40px;
@@ -1907,6 +1931,80 @@ ul {
 .contact-form textarea {
   min-height: 140px;
   resize: vertical;
+}
+
+/* === FLOATING INPUT GROUP === */
+.input-group {
+  position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 20px 20px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.input-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.input-group label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: all var(--duration-fast) var(--ease-smooth);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group textarea ~ label {
+  top: 24px;
+  transform: none;
+}
+
+.input-group label i {
+  color: var(--accent-cyan);
+  opacity: 0.6;
+  transition: opacity var(--duration-fast);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.03);
+  box-shadow:
+    0 0 0 3px rgba(0, 212, 255, 0.12),
+    0 0 20px rgba(0, 212, 255, 0.08);
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+  top: 10px;
+  transform: none;
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.5px;
+}
+
+.input-group input:focus ~ label i,
+.input-group textarea:focus ~ label i {
+  opacity: 1;
 }
 
 /* === 2026 FOOTER === */

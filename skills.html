@@ -43,7 +43,7 @@
               <span class="pill-glow"></span>
               <span>Kỹ năng</span>
             </a>
-            <a class="nav-pill" href="porfolio.html" data-page="portfolio">
+            <a class="nav-pill" href="portfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
               <span>Dự án</span>
             </a>
@@ -60,21 +60,26 @@
     <main>
       <!-- Hero ky nang chinh -->
       <section class="skill-hero">
+        <!-- Gradient orbs for parallax -->
+        <div class="gradient-orb gradient-orb--cyan"></div>
+        <div class="gradient-orb gradient-orb--purple"></div>
+        <div class="gradient-orb gradient-orb--pink"></div>
+        
         <div class="container skill-hero-grid">
-          <div class="hero-summary-copy reveal-on-scroll" data-reveal-delay="0s">
+          <div class="hero-summary-copy glass-card reveal-on-scroll" data-reveal-delay="0s">
             <span class="about-label">Năng lực &amp; công cụ</span>
             <h1>Bộ kỹ năng UI/UX</h1>
             <p>
               Mình đang học Công nghệ thông tin tại UTH University, tập trung vào nghiên cứu người dùng, thiết kế giao diện và dựng prototype cho đồ án
               cũng như hoạt động CLB. Bộ kỹ năng này thể hiện mức độ tự tin dựa trên phản hồi của giảng viên và đồng đội.
             </p>
-            <ul class="hero-badges">
-              <li>Figma nâng cao</li>
-              <li>Prototype tương tác</li>
-              <li>HTML/CSS responsive</li>
+            <ul class="chip-list">
+              <li><span>Figma nâng cao</span></li>
+              <li><span>Prototype tương tác</span></li>
+              <li><span>HTML/CSS responsive</span></li>
             </ul>
           </div>
-          <div class="hero-summary-photo reveal-on-scroll" data-reveal-delay="0.18s">
+          <div class="hero-summary-photo profile-card tilt-card reveal-on-scroll" data-reveal-delay="0.18s" data-tilt>
             <img src="images/avt3.jpg" alt="Lê Đức Anh đang tham quan không gian sáng tạo" />
             <div class="photo-note">Khảo sát không gian để thu thập cảm hứng thị giác cho đồ án UI/UX.</div>
           </div>
@@ -85,88 +90,97 @@
       <!-- Ban do ky nang dung Grid -->
       <section class="skill-map">
         <div class="container map-grid">
-          <article class="map-card reveal-on-scroll" data-reveal-delay="0.12s">
-            <h3>Công cụ UI/UX</h3>
+          <article class="map-card glass-card skill-card reveal-on-scroll" data-reveal-delay="0.12s">
+            <div class="card-head">
+              <i class="fa-solid fa-palette" style="color: var(--accent-cyan)"></i>
+              <h3>Công cụ UI/UX</h3>
+            </div>
             <ul class="skill-bar-list">
               <li>
-                <span>Figma</span>
-                <div class="bar-track" data-progress="94" style="--target-width: 94%;">
+                <span><i class="fa-brands fa-figma" style="color: var(--accent-cyan)"></i> Figma</span>
+                <div class="skill-progress bar-track" data-progress="94" style="--target-width: 94%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>FigJam</span>
-                <div class="bar-track" data-progress="88" style="--target-width: 88%;">
+                <span><i class="fa-solid fa-chalkboard" style="color: var(--accent-cyan)"></i> FigJam</span>
+                <div class="skill-progress bar-track" data-progress="88" style="--target-width: 88%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>Notion &amp; Miro</span>
-                <div class="bar-track" data-progress="80" style="--target-width: 80%;">
+                <span><i class="fa-solid fa-sticky-note" style="color: var(--accent-cyan)"></i> Notion &amp; Miro</span>
+                <div class="skill-progress bar-track" data-progress="80" style="--target-width: 80%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>Adobe XD</span>
-                <div class="bar-track" data-progress="62" style="--target-width: 62%;">
+                <span><i class="fa-brands fa-adobe" style="color: var(--accent-cyan)"></i> Adobe XD</span>
+                <div class="skill-progress bar-track" data-progress="62" style="--target-width: 62%;">
                   <span></span>
                 </div>
               </li>
             </ul>
           </article>
-          <article class="map-card reveal-on-scroll" data-reveal-delay="0.24s">
-            <h3>Front-end &amp; Prototype</h3>
+          <article class="map-card glass-card skill-card reveal-on-scroll" data-reveal-delay="0.24s">
+            <div class="card-head">
+              <i class="fa-solid fa-code" style="color: var(--accent-cyan)"></i>
+              <h3>Front-end &amp; Prototype</h3>
+            </div>
             <ul class="skill-bar-list">
               <li>
-                <span>HTML/CSS</span>
-                <div class="bar-track" data-progress="85" style="--target-width: 85%;">
+                <span><i class="fa-brands fa-html5" style="color: var(--accent-cyan)"></i> HTML/CSS</span>
+                <div class="skill-progress bar-track" data-progress="85" style="--target-width: 85%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>JavaScript</span>
-                <div class="bar-track" data-progress="74" style="--target-width: 74%;">
+                <span><i class="fa-brands fa-js" style="color: var(--accent-cyan)"></i> JavaScript</span>
+                <div class="skill-progress bar-track" data-progress="74" style="--target-width: 74%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>Responsive Layout</span>
-                <div class="bar-track" data-progress="78" style="--target-width: 78%;">
+                <span><i class="fa-solid fa-mobile-screen" style="color: var(--accent-cyan)"></i> Responsive Layout</span>
+                <div class="skill-progress bar-track" data-progress="78" style="--target-width: 78%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>Accessibility review</span>
-                <div class="bar-track" data-progress="70" style="--target-width: 70%;">
+                <span><i class="fa-solid fa-universal-access" style="color: var(--accent-cyan)"></i> Accessibility review</span>
+                <div class="skill-progress bar-track" data-progress="70" style="--target-width: 70%;">
                   <span></span>
                 </div>
               </li>
             </ul>
           </article>
-          <article class="map-card reveal-on-scroll" data-reveal-delay="0.36s">
-            <h3>Lập trình backend</h3>
+          <article class="map-card glass-card skill-card reveal-on-scroll" data-reveal-delay="0.36s">
+            <div class="card-head">
+              <i class="fa-solid fa-server" style="color: var(--accent-cyan)"></i>
+              <h3>Lập trình backend</h3>
+            </div>
             <ul class="skill-bar-list">
               <li>
-                <span>Node.js</span>
-                <div class="bar-track" data-progress="58" style="--target-width: 58%;">
+                <span><i class="fa-brands fa-node-js" style="color: var(--accent-cyan)"></i> Node.js</span>
+                <div class="skill-progress bar-track" data-progress="58" style="--target-width: 58%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>Express.js</span>
-                <div class="bar-track" data-progress="54" style="--target-width: 54%;">
+                <span><i class="fa-solid fa-route" style="color: var(--accent-cyan)"></i> Express.js</span>
+                <div class="skill-progress bar-track" data-progress="54" style="--target-width: 54%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>REST API cơ bản</span>
-                <div class="bar-track" data-progress="52" style="--target-width: 52%;">
+                <span><i class="fa-solid fa-plug" style="color: var(--accent-cyan)"></i> REST API cơ bản</span>
+                <div class="skill-progress bar-track" data-progress="52" style="--target-width: 52%;">
                   <span></span>
                 </div>
               </li>
               <li>
-                <span>MongoDB</span>
-                <div class="bar-track" data-progress="48" style="--target-width: 48%;">
+                <span><i class="fa-solid fa-database" style="color: var(--accent-cyan)"></i> MongoDB</span>
+                <div class="skill-progress bar-track" data-progress="48" style="--target-width: 48%;">
                   <span></span>
                 </div>
               </li>
@@ -183,32 +197,32 @@
           <p>Được đánh giá qua đồ án, đề tài nghiên cứu người dùng và phản hồi từ giảng viên, đồng đội.</p>
         </div>
         <div class="container skill-grid">
-          <article class="skill-card reveal-on-scroll" data-reveal-delay="0.12s">
-            <div class="radial-progress" data-progress="88" style="--progress: 88">
+          <article class="skill-card glass-card reveal-on-scroll" data-reveal-delay="0.12s">
+            <div class="radial-progress skill-progress" data-progress="88" style="--progress: 88">
               <span>4.4</span>
             </div>
-            <h3>Nghiên cứu người dùng</h3>
+            <h3 class="glow-text">Nghiên cứu người dùng</h3>
             <p>Phỏng vấn, dựng user journey và tổng hợp insight cho dự án sinh viên.</p>
           </article>
-          <article class="skill-card reveal-on-scroll" data-reveal-delay="0.22s">
-            <div class="radial-progress" data-progress="92" style="--progress: 92">
+          <article class="skill-card glass-card reveal-on-scroll" data-reveal-delay="0.22s">
+            <div class="radial-progress skill-progress" data-progress="92" style="--progress: 92">
               <span>4.6</span>
             </div>
-            <h3>Thiết kế UI trong Figma</h3>
+            <h3 class="glow-text">Thiết kế UI trong Figma</h3>
             <p>Sử dụng component, auto layout, variant để dựng giao diện hệ thống.</p>
           </article>
-          <article class="skill-card reveal-on-scroll" data-reveal-delay="0.32s">
-            <div class="radial-progress" data-progress="86" style="--progress: 86">
+          <article class="skill-card glass-card reveal-on-scroll" data-reveal-delay="0.32s">
+            <div class="radial-progress skill-progress" data-progress="86" style="--progress: 86">
               <span>4.3</span>
             </div>
-            <h3>Prototype tương tác</h3>
+            <h3 class="glow-text">Prototype tương tác</h3>
             <p>Tạo flow kiểm thử, micro-animation đơn giản và ghi nhận phản hồi.</p>
           </article>
-          <article class="skill-card reveal-on-scroll" data-reveal-delay="0.42s">
-            <div class="radial-progress" data-progress="80" style="--progress: 80">
+          <article class="skill-card glass-card reveal-on-scroll" data-reveal-delay="0.42s">
+            <div class="radial-progress skill-progress" data-progress="80" style="--progress: 80">
               <span>4.0</span>
             </div>
-            <h3>Front-end căn bản</h3>
+            <h3 class="glow-text">Front-end căn bản</h3>
             <p>HTML, CSS, JavaScript để chuyển giao thiết kế thành giao diện mẫu.</p>
           </article>
         </div>

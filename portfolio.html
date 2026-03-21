@@ -32,7 +32,7 @@
               <span class="pill-glow"></span>
               <span>Kỹ năng</span>
             </a>
-            <a class="nav-pill is-active" href="porfolio.html" data-page="portfolio">
+            <a class="nav-pill is-active" href="portfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
               <span>Dự án</span>
             </a>
@@ -49,12 +49,17 @@
     <main>
       <!-- Mo ta tong quan danh muc du an -->
       <section class="project-hero">
+        <!-- Gradient orbs for parallax -->
+        <div class="gradient-orb gradient-orb--cyan"></div>
+        <div class="gradient-orb gradient-orb--purple"></div>
+        <div class="gradient-orb gradient-orb--pink"></div>
+        
         <div class="container project-hero-grid">
-          <div class="reveal-on-scroll" data-reveal-delay="0s">
+          <div class="glass-card reveal-on-scroll" data-reveal-delay="0s">
             <span class="about-label">Thực hành &amp; xây dựng</span>
             <h1>Những dự án tiêu biểu đã và đang phát triển</h1>
           </div>
-          <p class="reveal-on-scroll" data-reveal-delay="0.12s">
+          <p class="glass-card reveal-on-scroll" data-reveal-delay="0.12s">
             Bốn dự án dưới đây thể hiện hành trình kết hợp UI/UX với lập trình web/backend của mình. Mỗi sản phẩm đều xuất phát từ bài toán thực tế sinh
             viên hoặc nhu cầu cá nhân, được triển khai và duy trì trên GitHub.
           </p>
@@ -64,102 +69,114 @@
       <!-- Danh sach du an dung Grid -->
       <section class="project-list">
         <div class="container">
-          <article class="project-row reveal-on-scroll" data-reveal-delay="0.1s">
-            <div class="project-thumb">
+          <!-- Project 1: Image Left -->
+          <article class="project-card project-row glass-card reveal-on-scroll" data-reveal-delay="0.1s">
+            <div class="project-thumb profile-card tilt-card" data-tilt>
               <img src="images/project1.png" alt="Giao diện dự án StuSmart" />
             </div>
             <div class="project-content">
               <header>
-                <h2>StuSmart</h2>
+                <h2 class="glow-text">StuSmart</h2>
                 <span>Nền tảng quản lý thông tin sinh viên UTH</span>
               </header>
               <p>
                 Web app giúp sinh viên theo dõi lịch học, điểm số và cập nhật học phí. Mình phụ trách nghiên cứu UX, thiết kế UI trong Figma, tạo
                 prototype HTML/CSS và xây dựng backend Express.js kết nối MongoDB để đồng bộ dữ liệu theo tài khoản.
               </p>
-              <ul class="chip-list">
-                <li>Figma</li>
-                <li>HTML/CSS</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-              </ul>
+              <div class="skill-tags">
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Figma</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">HTML/CSS</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Express.js</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">MongoDB</span>
+              </div>
               <div class="project-actions">
-                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/StuSmart" target="_blank" rel="noopener noreferrer">Xem repository</a>
+                <a class="btn-primary btn-magnetic" href="https://github.com/DuwcsAnh1710/StuSmart" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Xem repository
+                </a>
               </div>
             </div>
           </article>
 
-          <article class="project-row reveal-on-scroll" data-reveal-delay="0.2s">
-            <div class="project-thumb">
+          <!-- Project 2: Image Right -->
+          <article class="project-card project-row project-row--reverse glass-card reveal-on-scroll" data-reveal-delay="0.2s">
+            <div class="project-thumb profile-card tilt-card" data-tilt>
               <img src="images/project2.png" alt="Giao diện dự án MultiDriver Hub" />
             </div>
             <div class="project-content">
               <header>
-                <h2>MultiDriver Hub</h2>
+                <h2 class="glow-text">MultiDriver Hub</h2>
                 <span>Trình quản lý nhiều tài khoản Google Drive</span>
               </header>
               <p>
                 Ứng dụng desktop tích hợp Python (PySide6) và Node.js để quản lý nhiều tài khoản Drive. Hỗ trợ đồng bộ dữ liệu, tìm kiếm nâng cao và báo
                 cáo dung lượng. Mình đảm nhận kiến trúc luồng, UI và tài liệu hoá API giữa hai ngăn ứng dụng.
               </p>
-              <ul class="chip-list">
-                <li>Python</li>
-                <li>PySide6</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Google Drive API</li>
-              </ul>
+              <div class="skill-tags">
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Python</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">PySide6</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Node.js</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Express.js</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Google Drive API</span>
+              </div>
               <div class="project-actions">
-                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/MultiDriver-Hub" target="_blank" rel="noopener noreferrer">Xem repository</a>
+                <a class="btn-primary btn-magnetic" href="https://github.com/DuwcsAnh1710/MultiDriver-Hub" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Xem repository
+                </a>
               </div>
             </div>
           </article>
 
-          <article class="project-row reveal-on-scroll" data-reveal-delay="0.3s">
-            <div class="project-thumb">
+          <!-- Project 3: Image Left -->
+          <article class="project-card project-row glass-card reveal-on-scroll" data-reveal-delay="0.3s">
+            <div class="project-thumb profile-card tilt-card" data-tilt>
               <img src="images/battleship.jpg" alt="Giao diện trò chơi BattleShip" />
             </div>
             <div class="project-content">
               <header>
-                <h2>BattleShip</h2>
+                <h2 class="glow-text">BattleShip</h2>
                 <span>Trò chơi hải chiến luyện thuật toán</span>
               </header>
               <p>
                 Trò chơi BattleShip chạy trên Python console. Dự án giúp mình rèn luyện xử lý ma trận, kiểm tra va chạm tàu và tạo đối thủ AI cơ bản.
                 Phục vụ môn Cơ sở lập trình và luyện tập cấu trúc dữ liệu.
               </p>
-              <ul class="chip-list">
-                <li>Python</li>
-                <li>Game logic</li>
-                <li>Ma trận</li>
-              </ul>
+              <div class="skill-tags">
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Python</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Game Logic</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Ma trận</span>
+              </div>
               <div class="project-actions">
-                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/BattleShip" target="_blank" rel="noopener noreferrer">Xem repository</a>
+                <a class="btn-primary btn-magnetic" href="https://github.com/DuwcsAnh1710/BattleShip" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Xem repository
+                </a>
               </div>
             </div>
           </article>
 
-          <article class="project-row reveal-on-scroll" data-reveal-delay="0.4s">
-            <div class="project-thumb">
+          <!-- Project 4: Image Right -->
+          <article class="project-card project-row project-row--reverse glass-card reveal-on-scroll" data-reveal-delay="0.4s">
+            <div class="project-thumb profile-card tilt-card" data-tilt>
               <img src="images/project4.png" alt="Giao diện trò chơi Rock Paper Scissors" />
             </div>
             <div class="project-content">
               <header>
-                <h2>Rock Paper Scissors</h2>
+                <h2 class="glow-text">Rock Paper Scissors</h2>
                 <span>Game web mini luyện JavaScript</span>
               </header>
               <p>
                 Trò chơi oẳn tù tì được xây dựng bằng HTML, CSS, JavaScript thuần. Mình tập trung vào tạo hiệu ứng chuyển động, viết logic so sánh kết quả
                 sạch và dễ mở rộng cho nhiều chế độ chơi mới, đồng thời tối ưu trải nghiệm trên thiết bị di động.
               </p>
-              <ul class="chip-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Animation</li>
-              </ul>
+              <div class="skill-tags">
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">HTML</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">CSS</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">JavaScript</span>
+                <span class="skill-tag" style="--accent-cyan: var(--accent-cyan)">Animation</span>
+              </div>
               <div class="project-actions">
-                <a class="btn-primary" href="https://github.com/DuwcsAnh1710/RockPaperScissors" target="_blank" rel="noopener noreferrer">Xem repository</a>
+                <a class="btn-primary btn-magnetic" href="https://github.com/DuwcsAnh1710/RockPaperScissors" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Xem repository
+                </a>
               </div>
             </div>
           </article>
