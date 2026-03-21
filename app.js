@@ -196,7 +196,7 @@ class CursorSystem {
 }
 
 // ============================================================
-// PARALLAX BACKGROUND SYSTEM
+// PARALLAX BACKGROUND SYSTEM - 2026 Refined
 // ============================================================
 class ParallaxSystem {
   constructor() {
@@ -218,29 +218,30 @@ class ParallaxSystem {
   }
   
   bindEvents() {
+    // Very subtle mouse tracking for AI feel
     document.addEventListener('mousemove', (e) => {
       this.mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
       this.mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
     });
     
-    // Scroll-based parallax
+    // Smooth scroll parallax
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
       this.layers.forEach((layer, index) => {
-        const speed = 0.02 + (index * 0.01);
+        const speed = 0.015 + (index * 0.008);
         layer.style.transform = `translateY(${scrollY * speed}px)`;
       });
     });
   }
   
   animate() {
-    // Slower, smoother movement with lerp
-    this.targetX = lerp(this.targetX, this.mouseX, 0.02);
-    this.targetY = lerp(this.targetY, this.mouseY, 0.02);
+    // Ultra-smooth lerp for elegant movement
+    this.targetX = lerp(this.targetX, this.mouseX, 0.015);
+    this.targetY = lerp(this.targetY, this.mouseY, 0.015);
     
     this.layers.forEach((layer, index) => {
-      // Subtle movement intensity
-      const baseMove = 8 + (index * 6);
+      // Very subtle movement - creates depth without distraction
+      const baseMove = 6 + (index * 4);
       const moveX = this.targetX * baseMove;
       const moveY = this.targetY * baseMove;
       
@@ -485,39 +486,42 @@ class TiltCard {
 }
 
 // ============================================================
-// SCROLL REVEAL SYSTEM
+// SCROLL REVEAL SYSTEM - 2026 Premium
 // ============================================================
 class ScrollReveal {
   constructor() {
     this.elements = document.querySelectorAll('.reveal-on-scroll');
-    this.threshold = 0.15;
-    this.rootMargin = '0px 0px -10% 0px';
-    
+    this.threshold = 0.12;
+    this.rootMargin = '0px 0px -8% 0px';
+
     if (!this.elements.length || prefersReducedMotion) {
       this.showAll();
       return;
     }
-    
+
     this.init();
   }
-  
+
   showAll() {
     this.elements.forEach(el => el.classList.add('is-visible'));
   }
-  
+
   init() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
+            // Slight delay for smoother feel
+            setTimeout(() => {
+              entry.target.classList.add('is-visible');
+            }, 50);
             observer.unobserve(entry.target);
           }
         });
       },
       { threshold: this.threshold, rootMargin: this.rootMargin }
     );
-    
+
     this.elements.forEach(el => observer.observe(el));
   }
 }
