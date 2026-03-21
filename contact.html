@@ -32,7 +32,7 @@
               <span class="pill-glow"></span>
               <span>Kỹ năng</span>
             </a>
-            <a class="nav-pill" href="porfolio.html" data-page="portfolio">
+            <a class="nav-pill" href="portfolio.html" data-page="portfolio">
               <span class="pill-glow"></span>
               <span>Dự án</span>
             </a>
@@ -49,8 +49,13 @@
     <main>
       <!-- Hero lien he chinh -->
       <section class="contact-hero">
+        <!-- Gradient orbs for parallax -->
+        <div class="gradient-orb gradient-orb--cyan"></div>
+        <div class="gradient-orb gradient-orb--purple"></div>
+        <div class="gradient-orb gradient-orb--pink"></div>
+        
         <div class="container contact-hero-grid">
-          <div class="contact-hero-card reveal-on-scroll" data-reveal-delay="0s">
+          <div class="contact-hero-card glass-card reveal-on-scroll" data-reveal-delay="0s">
             <span class="about-label">Kết nối &amp; hợp tác</span>
             <h1>Kết nối cùng Lê Đức Anh</h1>
             <p>
@@ -58,16 +63,20 @@
               là một lời mời cùng nghiên cứu người dùng, hãy nhắn cho mình nhé!
             </p>
             <div class="contact-actions">
-              <a class="btn-primary" href="mailto:75246anhhao@gmail.com">Gửi email</a>
-              <a class="btn-outline" href="https://github.com/DuwcsAnh1710" target="_blank" rel="noopener noreferrer">Github</a>
+              <a class="btn-primary btn-magnetic" href="mailto:75246anhhao@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Gửi email
+              </a>
+              <a class="btn-outline btn-magnetic" href="https://github.com/DuwcsAnh1710" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
             </div>
             <ul class="chip-list contact-chip-list">
-              <li>Thủ Đức · TP.HCM</li>
-              <li>UTH University</li>
-              <li>Sinh viên năm 3</li>
+              <li><span><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan)"></i> Thủ Đức · TP.HCM</span></li>
+              <li><span><i class="fa-solid fa-university" style="color: var(--accent-cyan)"></i> UTH University</span></li>
+              <li><span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan)"></i> Sinh viên năm 3</span></li>
             </ul>
           </div>
-          <div class="contact-hero-photo reveal-on-scroll" data-reveal-delay="0.18s">
+          <div class="contact-hero-photo profile-card tilt-card reveal-on-scroll" data-reveal-delay="0.18s" data-tilt>
             <div class="contact-photo-frame">
               <img src="images/avt4.jpg" alt="Lê Đức Anh tại workshop thiết kế" />
             </div>
@@ -79,36 +88,36 @@
       <section class="contact-section">
         <div class="container contact-section-grid">
           <div class="contact-cards">
-            <article class="contact-card reveal-on-scroll" data-reveal-delay="0.1s">
-              <i class="fa-solid fa-envelope"></i>
+            <article class="contact-card glass-card reveal-on-scroll" data-reveal-delay="0.1s">
+              <i class="fa-solid fa-envelope" style="color: var(--accent-cyan)"></i>
               <div>
                 <h3>Email</h3>
                 <a href="mailto:75246anhhao@gmail.com">75246anhhao@gmail.com</a>
               </div>
             </article>
-            <article class="contact-card reveal-on-scroll" data-reveal-delay="0.18s">
-              <i class="fa-solid fa-phone"></i>
+            <article class="contact-card glass-card reveal-on-scroll" data-reveal-delay="0.18s">
+              <i class="fa-solid fa-phone" style="color: var(--accent-cyan)"></i>
               <div>
                 <h3>Điện thoại</h3>
                 <a href="tel:0933543987">0933543987</a>
               </div>
             </article>
-            <article class="contact-card reveal-on-scroll" data-reveal-delay="0.26s">
-              <i class="fa-brands fa-github"></i>
+            <article class="contact-card glass-card reveal-on-scroll" data-reveal-delay="0.26s">
+              <i class="fa-brands fa-github" style="color: var(--accent-cyan)"></i>
               <div>
                 <h3>GitHub</h3>
                 <a href="https://github.com/DuwcsAnh1710" target="_blank" rel="noopener noreferrer">github.com/DuwcsAnh1710</a>
               </div>
             </article>
-            <article class="contact-card reveal-on-scroll" data-reveal-delay="0.34s">
-              <i class="fa-brands fa-instagram"></i>
+            <article class="contact-card glass-card reveal-on-scroll" data-reveal-delay="0.34s">
+              <i class="fa-brands fa-instagram" style="color: var(--accent-cyan)"></i>
               <div>
                 <h3>Instagram</h3>
                 <a href="https://www.instagram.com/_lee.duwcs.anhz/" target="_blank" rel="noopener noreferrer">@_lee.duwcs.anhz</a>
               </div>
             </article>
-            <article class="contact-card reveal-on-scroll" data-reveal-delay="0.42s">
-              <i class="fa-brands fa-facebook"></i>
+            <article class="contact-card glass-card reveal-on-scroll" data-reveal-delay="0.42s">
+              <i class="fa-brands fa-facebook" style="color: var(--accent-cyan)"></i>
               <div>
                 <h3>Facebook</h3>
                 <a href="https://www.facebook.com/leeducanh1710" target="_blank" rel="noopener noreferrer">facebook.com/leeducanh1710</a>
@@ -116,23 +125,32 @@
             </article>
           </div>
 
-          <div class="contact-form-card reveal-on-scroll" data-reveal-delay="0.22s">
-            <h2>Gửi tin nhắn</h2>
+          <div class="contact-form-card glass-card reveal-on-scroll" data-reveal-delay="0.22s">
+            <h2 class="glow-text"><i class="fa-solid fa-paper-plane" style="color: var(--accent-cyan)"></i> Gửi tin nhắn</h2>
             <p>Hãy để lại thông tin, mình sẽ phản hồi trong vòng 24 giờ.</p>
             <form class="contact-form" autocomplete="off">
-              <label class="sr-only" for="contact-name">Tên của bạn</label>
-              <input id="contact-name" name="name" type="text" placeholder="Tên của bạn" required />
+              <div class="input-group">
+                <input id="contact-name" name="name" type="text" placeholder=" " required />
+                <label for="contact-name"><i class="fa-solid fa-user"></i> Tên của bạn</label>
+              </div>
 
-              <label class="sr-only" for="contact-email">Email của bạn</label>
-              <input id="contact-email" name="email" type="email" placeholder="Email của bạn" required />
+              <div class="input-group">
+                <input id="contact-email" name="email" type="email" placeholder=" " required />
+                <label for="contact-email"><i class="fa-solid fa-at"></i> Email của bạn</label>
+              </div>
 
-              <label class="sr-only" for="contact-subject">Chủ đề</label>
-              <input id="contact-subject" name="subject" type="text" placeholder="Chủ đề" />
+              <div class="input-group">
+                <input id="contact-subject" name="subject" type="text" placeholder=" " />
+                <label for="contact-subject"><i class="fa-solid fa-tag"></i> Chủ đề</label>
+              </div>
 
-              <label class="sr-only" for="contact-message">Tin nhắn của bạn</label>
-              <textarea id="contact-message" name="message" rows="4" placeholder="Tin nhắn của bạn"></textarea>
+              <div class="input-group">
+                <textarea id="contact-message" name="message" rows="4" placeholder=" " required></textarea>
+                <label for="contact-message"><i class="fa-solid fa-message"></i> Tin nhắn của bạn</label>
+              </div>
 
-              <button class="btn-primary" type="submit">
+              <button class="btn-primary ripple-effect" type="submit">
+                <span class="ripple"></span>
                 <i class="fa-solid fa-paper-plane"></i>
                 Gửi tin nhắn
               </button>
